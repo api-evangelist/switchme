@@ -1,7 +1,24 @@
 aid: switchme
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/switchme.png
 name: SwitchMe
-description: SwitchMe is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'SwitchMe was a Mumbai, India based fintech startup founded in 2012 and
+  backed by 500 Global that helped consumers evaluate and switch their home loans and
+  mobile service providers, handling document collection and submission on their behalf.
+  The company appears to be defunct: no public developer program, API, or documentation
+  could be found, and its switchme.in domain currently resolves to unrelated content.
+  This profile records what could be verified during the enrichment pass; there is
+  no API surface to catalog at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/switchme/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- India
+- Lending
+- Mobile
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/switchme-domain-security.yml
 - type: Website
   url: https://switchme.in
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
